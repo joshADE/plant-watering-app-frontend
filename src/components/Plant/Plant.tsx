@@ -80,7 +80,7 @@ const Plant: React.FC<PlantProps> = ({
             setIsWatering(false);
             setCooldown(true);
             const cooldownInterval = setInterval(() => {
-                setUpdatedWateringPercentage(curr => Math.max(curr - 3, 0));
+                setUpdatedWateringPercentage(curr => Math.max(curr - 4, 0));
             }, 1000)
             
             setTimeout(() => {
