@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: 'https://localhost:44321/api/',
+    baseURL: 'https://shipvista-backend.herokuapp.com/api/',
 });
 
 export default instance;

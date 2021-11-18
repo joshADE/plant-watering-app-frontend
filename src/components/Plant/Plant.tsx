@@ -141,7 +141,7 @@ const Plant: React.FC<PlantProps> = ({
 
     var showWateringNotice = plant.lastWateredTime === null ? 
                             true : 
-                            moment.duration(currentTime.diff(moment(plant.lastWateredTime, DotNetDateFormat))).asMinutes() > 6;
+                            moment.duration(currentTime.diff(moment(plant.lastWateredTime, DotNetDateFormat))).asHours() >= 6;
         return (
         <div className={styles["plant-container"]}>
         <div className={styles["plant-image"]}>
